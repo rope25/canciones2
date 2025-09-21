@@ -89,11 +89,12 @@ export default function AppRouter() {
         {/* index: cuando visites exactamente "/" redirige a /home */}
         <Route index element={<Navigate to="/Home" replace />} />
         {/* Rutas hijas */}
-        {/* <Route path="/Home" element={<Home />} />  */}
+      
         <Route path="/ListaCancionesPreferidas" element={<ListaCancionesPreferidas />} />
         <Route path="/Analitica" element={<Analitica />} />
         <Route path="/ContactForm" element={<ContactForm />} />
         <Route path="/SobreMi" element={<SobreMi />} /> 
+        <Route path="/Home" element={<Home /> } /> 
 
         {/* comodín: 404 */}
         <Route path="*" element={<NotFound />} />
