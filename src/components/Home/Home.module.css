@@ -1,10 +1,12 @@
 .container {
   padding: 20px;
-  background-color: #f0f0f0;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 
-img {
+/* img {
   width: 400px;
   height: 200px;
   object-fit: none;
@@ -18,4 +20,4 @@ figure {
   border: 1px solid black;
   background-repeat: repeat-y;
   background-position-y: -200px;
-}
+} */
