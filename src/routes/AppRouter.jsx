@@ -89,6 +89,7 @@ export default function AppRouter() {
         {/* index: cuando visites exactamente "/" redirige a /home */}
         <Route index element={<Navigate to="/Home" replace />} />
         {/* Rutas hijas */}
+        <Route path="/Home" element={<Home />} /> 
         <Route path="/ListadeCancionesPreferidas" element={<ListaCancionesPreferidas />} />
         <Route path="/Analitica" element={<Analitica />} />
         <Route path="/ContactForm" element={<ContactForm />} />

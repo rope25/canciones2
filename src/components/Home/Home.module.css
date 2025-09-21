@@ -1,18 +1,21 @@
-/* Header styles */
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  padding: 24px 32px;
-  margin-bottom: 32px;
+.container {
+  padding: 20px;
+  background-color: #f0f0f0;
 }
 
-.header h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #22223b;
-  margin: 0;
+
+img {
+  width: 400px;
+  height: 200px;
+  object-fit: none;
+}
+
+figure {
+  width: 4000px;
+  height: 4000px;
+  background-color: black;
+  background-image: url("./public/dulce introduccion al caos.jpg");
+  border: 1px solid black;
+  background-repeat: repeat-y;
+  background-position-y: -200px;
 }

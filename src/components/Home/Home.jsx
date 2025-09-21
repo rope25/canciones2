@@ -1,12 +1,17 @@
-// import styles from ":/Home/Home.module.css"
+import styles from ".src/components/Home/Home.module.css";
 
 export default function Home() {
     return (
-        <div >
-            <h1>Welcome to the Home Page</h1>
-                    <h2>Esta pagina muestra un catalogo de canciones escogidas por mi en esta primera fase del proyecto</h2>
-        </div>
+
+        <div className={styles.container}>
+        
+            <img src="./public/dulce introduccion al caos.jpg" alt="imagen portada" />
+            
+                    <h2 class="texto bienvenida" styles="bold" >Bienvenido a la app de canciones</h2>
+ 
+</div>
+
+        
     );
 }
-
 
