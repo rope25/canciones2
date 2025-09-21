@@ -1,0 +1,120 @@
+/* Root styles for the section */
+.list {
+  background: beige;
+  padding: 40px 0;
+  min-height: 100vh;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 24px 32px;
+  margin-bottom: 32px;
+}
+
+.header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #22223b;
+  margin: 0;
+}
+
+.count {
+  background: #4ecdc4;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Grid for song cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+  gap: 32px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Song card styles */
+.card {
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(34,34,59,0.07);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 32px rgba(34,34,59,0.12);
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #22223b;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(34,34,59,0.08);
+}
+
+.card h4 {
+  text-decoration-thickness: from-font;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4a4e69;
+  margin: 6px 0;
+  text-align: center;
+}
+
+#Artista {
+  text-decoration-thickness: from-font;
+  font-size: 1rem;
+  font-weight: bold;
+  color: blue;
+  margin: 6px 0;
+  text-align: center;
+}
+
+.card hr {
+  width: 60%;
+  border: none;
+  border-top: 1px solid #e9ecef;
+  margin: 8px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 300
+px) {
+  .header {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+  .card {
+    padding: 16px;
+  }
+}

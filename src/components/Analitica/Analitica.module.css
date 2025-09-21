@@ -1,0 +1,274 @@
+/* Contenedor general */
+/*
+  color -> Color de la letra
+  font-family -> Tipografía
+  font-size -> Tamaño de la letra
+  background-color -> color de fondo
+  margin -> distancia entre elementos
+  padding -> Acolchado
+  width -> ancho
+  height -> alto
+
+  unidades: 
+  px -> píxeles
+  vw -> viewWidth -> Ancho de pantalla
+  vh -> viewHeight -> Alto de pantalla
+  % -> tamaño del elemento padre
+
+  Box-Model. -> Clave
+
+*/
+
+body{
+  background-color: BEIGE;
+}
+nav{
+  background-color: rgb(243, 241, 241);
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 1rem auto;
+  margin-top:auto; 
+  padding: .1em;
+  background-color:lightgoldenrodyellow;
+}
+
+/* Cabecera y stats */
+.header {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: lightgray;
+  text-align: center;
+  text-size-adjust:auto;
+}
+.header h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color:black;
+  margin: 0;
+}
+
+.stats {
+  display: flex;
+  height:40;
+  width: auto;
+  text-align: center;
+  text-size-adjust: 50%;
+  gap: 20rem;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 0.95rem;
+  margin-top: 60px;
+}
+
+/* === CONTROLES / FORM ===
+   - Fuente legible y consistente
+   - Alto mínimo, padding generoso
+   - Alto contraste en texto y placeholder
+   - Estados :focus visibles (borde + halo)
+*/
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.input,
+.select,
+.number {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans",
+    "Helvetica Neue", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #111827; /* Texto oscuro (alto contraste) */
+  background-color: #ffffff; /* Fondo claro */
+  border: 1px solid #cbd5e1; /* Slate-300 */
+  border-radius: 0.55rem;
+  padding: 0.55rem 0.7rem;
+  min-height: 2.6rem; /* Altura cómoda de clic */
+  min-width: 10rem;
+}
+
+.input::placeholder {
+
+  color: #265ecc; /* Slate-500 */
+  opacity: 1; /* Evita placeholder demasiado tenue */
+}
+
+.input:focus,
+.select:focus,
+.number:focus {
+  outline: none;
+  border-color: #2563eb; /* Blue-600 */
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Label en línea y espaciado uniforme */
+.row {
+  display:flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: red;
+  font-size: 0.95rem;
+}
+
+/* Select: aspecto limpio (sin forzar caret personalizado) */
+.select {
+  appearance: auto;
+}
+
+/* Number: deja visibles los spinners por accesibilidad */
+.number {
+  appearance: auto;
+}
+
+/* GRID de tarjetas */
+/* .grid {
+  list-style: none;
+  margin: center;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+} */
+
+.card {
+  border: 5px solid #3f76e4; /* Gray-200 */
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  margin:auto;
+  margin-top: auto;
+}
+
+.poster {
+  width: 100%;
+  display: block;
+  background: #f3f4f6; /* Gray-100 */
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+
+.body {
+  background-color: #2563eb;
+  padding: 0.75rem 0.9rem 1rem;
+  display: grid;
+  gap: 0.35rem;
+}
+.title {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #111827;
+}
+/* .meta {
+  margin: 0;
+  color: red;
+  font-size: 0.9rem;
+}
+.plot {
+  margin: 0.25rem 0 0;
+  color:white;
+  font-size: 0.9rem;
+  line-height: 1.35;
+} */
+
+/* Estados
+.status {
+  text-align: center;
+  padding: 2rem;
+  color: #374151;
+}
+.error {
+  text-align: center;
+  padding: 2rem;
+  color: #b91c1c;
+} */
+
+/* Bloques colapsables y tags
+.details {
+  margin-top: 1rem;
+}
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding: 0.5rem 0;
+}
+.tag {
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  padding: 0.15rem 0.45rem;
+  border-radius: 0.4rem;
+} */
+
+/* Código de ejemplo
+.code {
+  background: #cc316d;
+  color: #e5e7eb;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  overflow: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 0.9rem;
+} */
+
+/* Accesibilidad: etiqueta oculta visualmente para inputs con solo placeholder */
+/* .srOnly {
+  position: absolute !important; COMENTAR
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 1px, 1px);
+  white-space: nowrap;
+  border: 0;
+} */
+
+/* Modo oscuro opcional*/
+@media (prefers-color-scheme: dark) {
+  .input,
+  .select,
+  .number {
+    color: #e5e7eb;
+    background-color: #0f172a; /* Slate-900 */
+    border-color: #334155; /* Slate-700 */
+  }
+  .input::placeholder {
+    color: #94a3b8;
+  }
+  .title,
+  .row {
+    color: #e5e7eb;
+  }
+  .meta {
+    color: #cbd5e1;
+  }
+  .plot {
+    color: #e2e8f0;
+  }
+  .card {
+    border-color: #334155;
+    background: #135cfa;
+  }
+  .poster {
+    background: #1f2937;
+  }
+  .stats {
+    color: #e5e7eb;
+  }
+}

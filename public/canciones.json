@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "titulo": "21 dias",
+    "album": "Joaquin Sabina",
+    "rating": 9.3,
+    "duracion": 150,
+    "poster": "21dias.jpg"
+
+  },
+  {
+    "id": 2,
+    "titulo": "insurreccion",
+    "album": "el ultimo de la fila",
+    "rating": 9,
+    "duracion": 180,
+    "poster": "insurreccion.jpg"
+
+  },
+  {
+    "id": 3,
+    "titulo": "la mujer de verde",
+    "album": "IZAL",
+    "rating": 7,
+    "duracion": 200,
+    "poster": "lamujerdeverde.jpg"
+
+  },
+  {
+    "id": 4,
+    "titulo": "La flaca",
+    "album": "jarabe de palo",
+    "rating": 9.8,
+    "duracion": 400,
+    "poster": "laflaca.jpg"
+
+  },
+  {
+    "id": 5,
+    "titulo": "dulce introduccion al caos",
+    "album": "extremo duro",
+    "rating": 10,
+    "duracion": 250,
+    "poster": "dulce introduccion al caos.jpg"
+
+  }
+]

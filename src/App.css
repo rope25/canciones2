@@ -1,0 +1,50 @@
+.error404 {
+    color: red;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+.error404-image {
+  max-width: 100%;
+  height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: auto;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}/* Modo oscuro opcional*/
+@media (prefers-color-scheme: dark) {
+  .input,
+  .select,
+  .number {
+    color: #e5e7eb;
+    background-color: #0f172a; /* Slate-900 */
+    border-color: #334155; /* Slate-700 */
+  }
+  .input::placeholder {
+    color: #94a3b8;
+  }
+  .title,
+  .row {
+    color: #e5e7eb;
+  }
+  .meta {
+    color: #cbd5e1;
+  }
+  .plot {
+    color: #e2e8f0;
+  }
+  .card {
+    border-color: #334155;
+    background: #135cfa;
+  }
+  .poster {
+    background: #1f2937;
+  }
+  .stats {
+    color: #e5e7eb;
+  }
+}
+

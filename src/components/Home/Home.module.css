@@ -1,0 +1,18 @@
+/* Header styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 24px 32px;
+  margin-bottom: 32px;
+}
+
+.header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #22223b;
+  margin: 0;
+}
