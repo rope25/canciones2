@@ -64,8 +64,8 @@ nav{
   text-size-adjust: 50%;
   gap: 20rem;
   flex-wrap: wrap;
-  color: white;
-  font-size: 0.95rem;
+  color: black;
+  font-size: 1.5rem;
   margin-top: 60px;
 }
 

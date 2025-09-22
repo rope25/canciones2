@@ -7,7 +7,7 @@
   margin-bottom: 1rem;
 }
 .subtitle {
-  color: #475569;
+  color: blue;
   margin: 0.25rem 0 0;
 }
 
@@ -62,7 +62,7 @@
 
 .input::placeholder,
 .textarea::placeholder {
-  color: #6b7280;
+  color: #b2c8f5;
 }
 
 .input:focus,

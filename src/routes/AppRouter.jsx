@@ -1,9 +1,10 @@
 import { Routes, Route, Navigate, NavLink, Outlet } from "react-router-dom";
-import Home from "../components/Home/Home";
+
 import ListaCancionesPreferidas from "../components/ListaCancionesPreferidas/ListaCancionesPreferidas";
 import Analitica from "../components/Analitica/Analitica";
 import ContactForm from "../components/ContactForm/ContactForm";
 import SobreMi from "../components/SobreMi/SobreMi";
+import Home from "../components/Home/Home";
 
 function Layout() {
   return (
@@ -11,7 +12,7 @@ function Layout() {
       <header style={{ padding: "12px 16px", borderBottom: "1px solid #eee" }}>
         <nav style={{ display: "flex", gap: 12 }}>
           <NavLink
-            to="/Home"
+            to="/home"
             style={({ isActive }) => ({
               textDecoration: "none",
               color: isActive ? "#1d4ed8" : "#111827",
@@ -21,7 +22,7 @@ function Layout() {
             Home
           </NavLink>
           <NavLink
-            to="/listadecancionespreferidas"
+            to="/listacancionespreferidas"
             style={({ isActive }) => ({
               textDecoration: "none",
               color: isActive ? "#1d4ed8" : "#111827",
