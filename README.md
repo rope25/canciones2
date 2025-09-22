@@ -11,6 +11,8 @@ Currently, two official plugins are available:
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
-# routes
-Algunos problemas con la imagen de error y el css, pero si estaria programado, de manera que cuando no hay un enlace a paginas hijas salta el error
-El proyecto en este punto muestra un cuatro paginas y permite la navegacion entre ellas.
+# APP
+
+incorpora bootstrap
+faltaria insercion de imagen de error y he tratado de probar alguna funcion avanzada de bootstrap como un gradiente, pero de momento no sale.
+
